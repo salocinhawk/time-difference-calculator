@@ -17,7 +17,6 @@ function App() {
   const [result, setResult] = useState('')
 
   const calculate = () => {
-    console.log(`${end}${endPeriod}`, convertTime(`${end}${endPeriod}`, 'HH:MM'));
     const startTime = new Date(`${format(new Date(), 'MMMM DD, YYYY')} ${convertTime(`${start}${startPeriod}`, 'hh:MM')}:00`)
     const endTime = new Date(`${format(new Date(), 'MMMM DD, YYYY')} ${convertTime(`${end}${endPeriod}`, 'hh:MM')}:00`)
     const hourDiff = differenceInHours(endTime, startTime)
